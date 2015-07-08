@@ -1,6 +1,6 @@
 # S3Bootstrap
 
-Documentation: [brylok.com/s3bootstrap](http://brylok.com/s3bootstrap)
+Live Example and more documentation: [brylok.com/s3bootstrap](http://brylok.com/s3bootstrap)
 
 ## Features
 * JavaScript compressing with uglify.
