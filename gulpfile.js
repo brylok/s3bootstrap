@@ -121,13 +121,6 @@ gulp.task('upload-to-s3', [], function() {
 });
 
 
-// clean out dist assets directory
-gulp.task('clean', function(cb) {
-    del(['dist/assets/css', 'dist/assets/js', 'dist/assets/img'], cb)
-});
-
-
-
 // PRIMARY TASKS
 // gulp work task (use while working)
 gulp.task('work', ['fileinclude', 'sass', 'jscompress', 'imagemin', 'rootfiles', 'browser-sync'], function () {
@@ -143,8 +136,8 @@ gulp.task('work', ['fileinclude', 'sass', 'jscompress', 'imagemin', 'rootfiles',
 
 
 // gulp build task (use when building for deployment)
-gulp.task('build', ['clean'], function () {
-    gulp.start('fileinclude', 'sass', 'jscompress', 'imagemin', 'rootfiles');
+gulp.task('build', ['fileinclude', 'sass', 'jscompress', 'imagemin', 'rootfiles'], function () {
+
 });
 
 

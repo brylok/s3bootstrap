@@ -27,9 +27,19 @@ h1 {
   font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
-  opacity:1;
+  opacity: 1;
   font-size: 3.8em;
   line-height: 50px;
+
+  @include breakpoint(verysmall) {
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+
+  @include breakpoint(medium) {
+    margin-bottom: 10px;
+    line-height: 40px;
+  }
 }
 
 ::-moz-selection {
@@ -45,7 +55,6 @@ h1 {
 p {
   font-size: 1.5em
 }
-
 
 //section one styles
 .section-one {
@@ -65,8 +74,23 @@ p {
     line-height: 36px;
     font-weight: 400;
     letter-spacing: 0.02em;
-    opacity:1;
+    opacity: 1;
     margin-bottom: 20px;
+
+    @include breakpoint(verysmall) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include breakpoint(small) {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    @include breakpoint(medium) {
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
 
   .wow {
@@ -78,6 +102,17 @@ p {
     border-color: grey;
     border-radius: 2px;
     transition: all 250ms;
+    margin: 20px;
+
+    @include breakpoint(verysmall) {
+      font-size: 14px;
+      margin: 5px;
+    }
+
+    @include breakpoint(medium) {
+      font-size: 14px;
+      margin: 10px;
+    }
 
     &:hover {
       background: $s3bootstrapgold;
@@ -90,21 +125,37 @@ p {
   }
 }
 
-
 .section-one.main-section .large-icon {
   font-size: 175px;
   margin-bottom: 25px;
   color: $s3bootstrapgold;
+
+  @include breakpoint(verysmall) {
+    font-size: 100px;
+  }
+
+  @include breakpoint(small) {
+    font-size: 125px;
+  }
+
+  @include breakpoint(medium) {
+    font-size: 150px;
+  }
 }
-
-
-
 
 //section one callout sections
 .section-one {
 
   .callout {
     margin-bottom: 20px;
+
+    @include breakpoint(verysmall) {
+      font-size: 14px;
+    }
+
+    @include breakpoint(medium) {
+      font-size: 14px;
+    }
   }
 
   p {
@@ -116,10 +167,19 @@ p {
     font-size: 60px;
     line-height: 30px;
     margin-bottom: 10px;
+
+    @include breakpoint(verysmall) {
+      font-size: 40px;
+      margin-bottom: 5px;
+      line-height: 40px;
+    }
+
+    @include breakpoint(medium) {
+      font-size: 50px;
+      line-height: 50px;
+    }
   }
 }
-
-
 
 //section two styles
 .section-two {
