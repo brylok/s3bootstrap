@@ -1,0 +1,16 @@
+//section styles
+.main-section {
+  min-height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.section-one.main-section,  {
+  background: $S3bootstrapnav;
+  color: $S3bootstrapwhite;
+}
+
+.section-two.main-section {
+  background: $S3bootstrapwhite;
+  color: $S3bootstrapnav;
+}

@@ -1,0 +1,8 @@
+.DS_STORE
+.vagrant
+.idea/*
+.idea
+node_modules
+working/*
+dist/*
+aws.json

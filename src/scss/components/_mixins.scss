@@ -1,0 +1,27 @@
+// MIXINS
+
+//responsive mixin (allow declaration of responsive values in the class)
+//example usage: @include breakpoint(medium) {width: 80%; margin-left: 10%;};
+@mixin breakpoint($point) {
+  @if $point == verylarge {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == verysmall {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+}

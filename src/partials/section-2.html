@@ -1,0 +1,58 @@
+<!-- Section Three -->
+<section id="section-two" class="main-section section-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-6" style="text-align:left;">
+                    <h2 id="download-npm">Get Started</h2>
+                    <p>Install global gulp</p>
+                    <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo npm install gulp -g</code></pre></div>
+                    <br/>
+                    <p>Clone this repository in your working directory</p>
+                    <div class="highlight"><pre><code class="language-bash" data-lang="bash">git clone git@github.com:brylok/bryanlokey.com.git project_name</code></pre></div>
+                    <br/>
+                    <p>Change to the directory project_name</p>
+                    <div class="highlight"><pre><code class="language-bash" data-lang="bash">cd project_name</code></pre></div>
+                    <br/>
+                    <p>Install dependencies</p>
+                    <div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install</code></pre></div>
+                    <br/>
+                    <p>Start Working</p>
+                    <div class="highlight"><pre><code class="language-bash" data-lang="bash">gulp work</code></pre></div>
+                    <br/>
+                    <p>Setup Deployment Key</p>
+                    <p>Before you will be able to deploy you will need to setup your deployment key. Rename the file aws_sample.json to aws.json and fill in the values.</p>
+                    <p>To obtain the key and secret you need to go to Amazon and copy the values from there. <a href="http://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html">(more info here)</a></p>
+                    <p>The bucket is simply the bucket name and the region can be obtained from your S3 dashboard.</p>
+                    <p><i>Don't worry, the aws.json file will be ignored by git.</i></p>
+
+
+
+                </div>
+
+                <div class="col-md-6"  style="text-align:left;">
+                    <h2 id="download-npm">Usage</h2>
+                    <p>Build Working Files</p>
+                    <div class="highlight"><pre><code class="language-bash" data-lang="bash">gulp work</code></pre></div>
+                    <p>This will process html file includes, compress sass, compress js, compress images, move root files and open page in browser using browsersync.</p>
+                    <br/>
+                    <p>Build Production Files</p>
+                    <div class="highlight"><pre><code class="language-bash" data-lang="bash">gulp build</code></pre></div>
+                    <p>This will will empty the <code>dist/</code> directory and then process html file includes, compress sass, compress js, compress images and move root files.</p>
+                    <br/>
+                    <p>Deploy to S3 Bucket</p>
+                    <div class="highlight"><pre><code class="language-bash" data-lang="bash">gulp deploy</code></pre></div>
+                    <p>This runs the <code>build</code> process and then uploads the files to an S3 bucket.</p>
+                    <br/>
+                    <p>File Organization</p>
+                    <p>Your working files are located in the <code>src</code> folder. The <code>index.html</code> has includes for smaller components of each page. Those components can be found in  <code>src/partials</code></p>
+                    <p>To add any js library simply copy it to the <code>src/js/vendor</code> folder</p>
+                    <br/>
+                    <p>Adding and Removing Assets</p>
+                    <p>To remove the default docs styles simply remove the include from <code>src/scss/styles.scss</code> and delete the file from the components folder.</p>
+                    <p>To add any js library simply copy it to the <code>src/js/vendor</code> folder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

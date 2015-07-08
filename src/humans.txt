@@ -1,0 +1,6 @@
+_______________________________________________________________________________
+TECHNOLOGY
+
++    HTML, CSS, Sass, JavaScript, S3
++    Gulp, Git, Bower, NPM, Node
++    Normalize.css, Typeplate, jQuery, FitText, Masonry, Waypoints, ScrollTo, Easing,

@@ -1,0 +1,125 @@
+//docs layout styles
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.8;
+  background: #eee;
+  width: 100%;
+  height: 100%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:active, a:hover {
+  text-decoration: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 700
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  opacity:1;
+  font-size: 3.8em;
+  line-height: 50px;
+}
+
+::-moz-selection {
+  background: lightgrey;
+  text-shadow: none
+}
+
+::selection {
+  background: lightgrey;
+  text-shadow: none
+}
+
+p {
+  font-size: 1.5em
+}
+
+
+//section one styles
+.section-one {
+  padding: 0;
+  margin-bottom: 0;
+  padding: 125px 0 80px;
+  overflow: hidden;
+
+  .text-col {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  p.subtitle {
+    padding: 0% 10%;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    opacity:1;
+    margin-bottom: 20px;
+  }
+
+  .wow {
+    visibility: hidden;
+  }
+
+  .btn-primary {
+    background: grey;
+    border-color: grey;
+    border-radius: 2px;
+
+    &:hover {
+      background: $s3bootstrapgold;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+
+.large-icon {
+  font-size: 175px;
+  margin-bottom: 25px;
+  color: $s3bootstrapgold;
+}
+
+
+
+
+//section one callout sections
+.section-one {
+
+  .callout {
+    margin-bottom: 20px;
+  }
+
+  p {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 60px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+//section two styles
+.section-two {
+  margin-bottom: 100px;
+}

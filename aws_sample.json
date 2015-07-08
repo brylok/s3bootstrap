@@ -1,0 +1,6 @@
+{
+  "key": "SOMELONGKEYGOESHERE",
+  "secret": "SOMELONGSECREYGOESHERE",
+  "bucket": "bucketname",
+  "region": "bucket-region-here"
+}
