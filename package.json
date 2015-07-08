@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:brylok/gulp-starter-template.git"
+    "url": "git@github.com:brylok/s3bootstrap.git"
   },
   "author": "Bryan Lokey",
   "license": "MIT",
