@@ -77,9 +77,11 @@ p {
     background: grey;
     border-color: grey;
     border-radius: 2px;
+    transition: all 250ms;
 
     &:hover {
       background: $s3bootstrapgold;
+      transition: all 250ms;
     }
 
     i {
@@ -89,7 +91,7 @@ p {
 }
 
 
-.large-icon {
+.section-one.main-section .large-icon {
   font-size: 175px;
   margin-bottom: 25px;
   color: $s3bootstrapgold;

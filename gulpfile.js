@@ -112,7 +112,7 @@ gulp.task('browser-sync', function() {
 gulp.task('upload-to-s3', [], function() {
     gulp.src('dist/**')
         .pipe(s3(JSON.parse(fs.readFileSync('aws.json')), {
-            uploadPath: "/s3bootstrap/",
+            uploadPath: "/",
             headers: {
                 'x-amz-acl': 'public-read',
                 'Cache-Control': 'max-age=315360000, no-transform, public'

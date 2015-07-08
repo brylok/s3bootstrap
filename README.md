@@ -26,7 +26,7 @@ You will require [node](http://nodejs.org) and [npm](https://npmjs.org) installe
 2. Clone this repository in your working directory
 
 	```
-		git clone git@github.com:brylok/bryanlokey.com.git <project_name>
+		git clone git@github.com:brylok/s3bootstrap.git <project_name>
 	```
 
 3. Change to the directory project_name
